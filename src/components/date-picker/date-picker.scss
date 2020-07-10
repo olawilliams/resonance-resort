@@ -1,0 +1,9 @@
+.booking-summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .warning {
+        color: red;
+    }
+}

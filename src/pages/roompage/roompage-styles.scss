@@ -1,0 +1,38 @@
+.room-page {
+    display: flex;
+    flex-direction: column;
+
+
+    .search {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        width: 80vw;
+        padding: 20px;
+
+        .title {
+            text-align: center;
+            border-bottom: 2px outset rgb(8, 8, 26);
+            margin: 60px auto;
+        }
+
+        .search-parameters {
+            display: grid;
+            grid-template-columns: 40% 30% 30%;
+            position: relative;
+        left: 15%;
+           
+            width: 100%;
+
+        }
+    }
+
+    .rooms {
+        display: grid;
+        
+        grid-template-columns: repeat(4, 1fr);
+        padding: 20px;
+        grid-gap: 20px;
+    }
+}

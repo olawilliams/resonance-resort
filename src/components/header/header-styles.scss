@@ -1,0 +1,32 @@
+.header {
+          
+    .options {
+        display: flex;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        
+
+        .logo-container {
+            width: 60%;
+            margin: 20px;
+            
+            .logo {
+                font-size: 25px;
+                color: white;
+            }
+            
+        }
+
+        .others {
+            width: 40%;
+            margin: 20px;
+            
+            .option {
+                padding: 25px;
+                font-size: 20px;
+                color: white;
+            }
+        }
+    }
+}

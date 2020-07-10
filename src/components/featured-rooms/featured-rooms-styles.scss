@@ -1,0 +1,23 @@
+.featured {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 100%;
+    margin: 50px 0;
+
+    .title {
+        text-align: center;
+        border-bottom: 2px outset rgb(8, 8, 26);
+        margin: 60px auto;
+    }
+
+    .featured-lists {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        width: 80vw;
+        position: relative;
+        left: 10%;
+    }
+}

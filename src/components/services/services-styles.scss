@@ -1,0 +1,45 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    width: 100%;
+    background: rgb(241, 243, 241);
+    
+    .title {
+        text-align: center;
+        border-bottom: 2px outset rgb(8, 8, 26);
+        margin: 60px auto;
+    }
+
+    .our-services {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+       width: 80vw;
+       justify-content: center;
+       position: relative;
+       left: 10%;
+
+        .service-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 1px 1px 1px 1px grey;
+            width: 220px;
+            height: 200px;
+            padding: 10px;
+
+            .service-name {
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            .service-details {
+                text-align: center;
+                letter-spacing: 1.1pt;
+            }
+        }
+    }
+}

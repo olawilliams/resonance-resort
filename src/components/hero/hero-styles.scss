@@ -1,0 +1,40 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+    .bcg {
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 70vh;
+    }
+
+    .inner-hero {
+        width: 40%;
+        height: 200px;
+        background: black;
+        opacity: 0.4;
+        box-shadow: 1px 1px 1px 1px rgb(206, 203, 203);
+        position: absolute;
+        top: 30%;
+        left: 30%;
+
+        .title {
+            
+            text-transform: uppercase;
+            color: #ffffff;
+            text-align: center;
+            letter-spacing: 1.3pt;
+            padding-top: 10px;
+            font-size: 3em;
+        }
+
+        button {
+            position: relative;
+            top: 5%;
+            left: 30%;
+        }
+    }
+}

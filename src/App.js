@@ -1,24 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
 
-function App() {
+import './App.css';
+import { getImages } from './firebase/firebase-utils'
+import DATA_JS from './data'
+
+import { Route, Switch } from 'react-router-dom'
+
+import HomePage from './pages/homepage/homepage-component';
+import RoomPage from './pages/roompage/roompage-component'
+import SignIn from './pages/signin-page/signin-component';
+import SignUp from './pages/signup-page/signup-component';
+import Header from './components/header/header-component';
+import SingleRoomPage from './pages/singleroom-page/singleroom-page-component'
+
+const  App = ()  => {
+  useEffect(() => {
+    getImages();
+  }, [])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Switch>
+        <Route exact path='/' component={HomePage}/>
+        <Route exact path='/rooms' component={RoomPage}/>
+        <Route exact path='/login' component={SignIn}/>
+        <Route exact path='/signup' component={SignUp}/>
+        <Route exact path='/rooms/:roomId' component={SingleRoomPage}/>
+        
+      </Switch>
+      
     </div>
   );
 }
